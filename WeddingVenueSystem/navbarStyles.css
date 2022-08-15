@@ -1,0 +1,20 @@
+nav{
+    background-color: white !important;
+}
+
+img{
+    width: 150px;
+    height: auto;
+}
+
+nav a{
+    color: #F689D2 !important;
+    margin-left: 30px !important;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem !important; 
+}
+
+#sign-up{
+    background-color:#F689D2;
+    color: white !important;
+}

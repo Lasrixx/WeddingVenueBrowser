@@ -1,0 +1,104 @@
+.search-main-image{
+    width: 100%;
+}
+
+.heading{
+    font-family: 'Playfair Display', serif; 
+    color: #F689D2;
+}
+
+#intro-heading{
+    margin-left: 10%;
+}
+
+.form-div{
+    margin: 25px 250px 25px 250px;
+    padding: 10px 10px 10px 10px;
+    border: 3px dashed;
+    border-color: #F689D2;
+}
+
+.search-form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 50px;
+}
+
+.date-labels{
+    display:grid;
+    grid-template-columns: 61.125% 38.875%;
+}
+
+.slider-labels{
+    display:grid;
+    grid-template-columns: 65% 35%;
+}
+
+.slider-toggle:checked{
+    background-color: #F689D2;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #F689D2;
+    cursor: pointer;
+}
+
+.slider:disabled::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    background: #b7b7b7;
+}
+
+.form-check-input:checked{
+    background-color: #F689D2 !important;
+    border-color: #F689D2 !important;
+}
+
+.catering-labels{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.licensed-labels{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#search-button{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+#search-heading{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#search-results{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+.more-details{
+    background-color: #F689D2 !important;
+    color: white !important;
+}

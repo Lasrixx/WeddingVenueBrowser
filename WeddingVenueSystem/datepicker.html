@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>jQuer Datepicker Demo</title>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	</head>
+	<body>
+ 
+		<p>Select Date: <input type="text" id="datepicker"></p>
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script>
+			$(document).ready(function(){
+				$( "#datepicker" ).datepicker();
+			});
+            //make an array of disable dates
+            var dates = ["01-06-2021", "15-06-2021", "30-06-2021"];
+
+            function disableDates(date) {
+            var string = $.datepicker.formatDate('dd-mm-yy', date);
+            return [dates.indexOf(string) == -1];
+            }
+
+            $("#datepicker").datepicker({
+            beforeShowDay: disableDates
+            });
+		</script>
+	</body>
+</html>
